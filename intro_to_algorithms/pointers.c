@@ -17,4 +17,9 @@ void main(void) {
 
 	printf("Value of px: %d\n", *px); // show the value of a pointer
 
+	//modify the pointer
+	(*px)++;
+	printf("value of pointer: %d\n", *px);
+	printf("value of x: %d\n", x);
+
 }
