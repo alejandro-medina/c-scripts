@@ -5,7 +5,7 @@ Write out a file with text using the command `echo hello world > my_file.txt`
 
 hello world
 
-My firt file on algorithm class
+My first file on algorithm class
 
 command: pwd - shows current directory
 command: ll - shows permissions 

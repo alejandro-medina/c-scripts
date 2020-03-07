@@ -1,23 +1,19 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
+#include <math.h> // use sqrt(), pow()
 
-float calculate_hypotenuse(float legA, float legB);
+void main(void) {
 
-int main(int argc, char** argv) {
+    // Declare two legs
+    float legA = 4.5;
+    float legB = 5.4;
 
-	float legA = atoi(argv[1]);
-	float legB = atoi(argv[2]);
 
-	float result = calculate_hypotenuse(legA, legB);
-	printf("The hypotenuse is %.2f\n", result);
+    // hyp = root of squared A + squared B
+    float hypotenuse = sqrt(pow(legA, 2) + pow(legB, 2));
 
-	return 0;
-}
+    printf("Leg A = %.2f\nLeg B = %.2f\nHypotenuse = %.2f\n", legA, legB, hypotenuse);
 
-float calculate_hypotenuse(float legA, float legB) {
 
-	return sqrt(pow(legA, 2) + pow(legB, 2));
 
 }
