@@ -1,49 +1,53 @@
+# Intro to algorithms class
 
-## Commands
 
-Write out a file with text using the command `echo hello world > my_file.txt`
+#### Types of programming languages
 
-hello world
 
-My first file on algorithm class
+#### Variables
+Are used to store values with a specific name
+To use a variable we need to declare it first, at the beginning of our program, the sintax is _type [name];_ Example:
+```c
+int age;
+char option;
+float bmi;
+```
+You can also assign a value to the variable in two ways: at the moment of declaring or later:
 
-command: pwd - shows current directory
-command: ll - shows permissions 
-------------- r = read, w = write, x = execute
-------------- rwxrwxrwx
-------------- those which have a "-" don't have that permission
-------------- first group: user who created, second: group, third: public
+```c
+int age;
+age = 19; // stores the value 19 inside the var "age"
 
-command: chmod - change permissions
-command: ls - shows directory
-command: ls *.c - shows all files with extension .c
-
-## Class Feb 20th 2020
-
-How to enter arguments to our C program
-
-The main function can have parameters to receive the arguments thourgh the command line 
+float bmi = 21.76; // declares the var bmi and assigns directly its value
 
 ```
-int main (int argc, char** argv) { 
+Now you can use variables inside your program in a specific scope, but that is another topic. For the while, use it inside a function or your main function.
 
-	// Argc = Argument count
-	// Argv = Argument vector
 
+#### Functions
+
+Functions are a pretty way to optimize the code inside your program. They are used to avoid repeating code. Basically, when you have a piece of code that is being repeated several times in your program: you're doing sth wrong. The advantajes of functions is that you can use them many times as you want with different parameters. 
+
+You can declare a new function is your programs as: _returning_type [name_of_your_function] (params)_
+
+Example of a function that will return the square of a number:
+
+```c
+// a fucntion that returns an int value
+int function square(int num) {
+	return num*num; // return is important
 }
 ```
+Now you can use yor **square** function with different arguments as:
 
-- The first parameter indicated the number of arguments entered by the user:
--- The number of arguments considers the name of the program (argv[0])
-
-- The second parameter is the vector or arguments that the user entered
--- if is only char* -> is a complete string, if it is char** -> receive a vector
-
-
-### Commands
-
-```
-man [command] // shows the manual for the command given
-atoi // converts a string into a number
+```c
+int a = square(4); // returns 16
+int b = square(3); // returns 9
+int c = square(8); // returns 64
 ```
 
+#### Pointers
+#### Arguments
+#### Bash commands
+#### Git
+#### 
